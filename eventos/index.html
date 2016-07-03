@@ -10,9 +10,20 @@
       <img src="img/img1.jpg">
       <div class="msj">Hola dame click :D</div>
     </div>
-    <!-- <button type="button" id="btn">Click</button><br><br>
-    <div class="anim" style="background:#98bf21; height:100px; width:100px; position:absolute;"></div> -->
+    <button type="button" id="btn">Click</button><br><br>
+    <div class="anim" style="background:#98bf21; height:100px; width:100px; position:absolute;"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+     $(document).ready(function() {
+       $("#btn").click(function() {
+         var div = $(".anim");
+         div.animate({height: '300px', opacity: '0.4'}, "slow");
+         div.animate({width: '300px', opacity: '0.8'}, "slow");
+         div.animate({height: '100px', opacity: '0.4'}, "slow");
+         div.animate({width: '100px', opacity: '0.8'}, "slow");
+       });
+     });
+    </script>
   </body>
 </html>
